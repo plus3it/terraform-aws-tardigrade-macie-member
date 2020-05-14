@@ -1,4 +1,4 @@
-## terraform-aws-tardigrade-macie Change Log
+## terraform-aws-tardigrade-macie-member Change Log
 
 All notable changes to this project will be documented in this file.
 
