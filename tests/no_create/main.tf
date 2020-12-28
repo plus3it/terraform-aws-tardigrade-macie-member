@@ -1,9 +1,9 @@
-provider aws {
+provider "aws" {
   region  = "us-east-1"
   profile = "member"
 }
 
-provider aws {
+provider "aws" {
   region  = "us-east-1"
   alias   = "master"
   profile = "master"
