@@ -12,24 +12,32 @@ are assuming that you will be using a profile with the name `member` and `master
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
-| aws.master | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_aws.master"></a> [aws.master](#provider\_aws.master) | n/a |
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [aws_caller_identity.master](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
+| [aws_caller_identity.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/caller_identity) | data source |
+| [aws_iam_policy_document.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/iam_policy_document) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| create\_macie\_member | Controls whether to create the Macie member | `bool` | `true` | no |
-| tags | Map of tags to apply to the resources | `map(string)` | `{}` | no |
+| <a name="input_create_macie_member"></a> [create\_macie\_member](#input\_create\_macie\_member) | Controls whether to create the Macie member | `bool` | `true` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Map of tags to apply to the resources | `map(string)` | `{}` | no |
 
 ## Outputs
 
-No output.
+No outputs.
 
 <!-- END TFDOCS -->
